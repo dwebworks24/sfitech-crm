@@ -30,10 +30,11 @@
         {% block stylesheets %}{% endblock stylesheets %}
     </head>
 
-    <body>
+    <body data-bs-theme="dark">
 
         <div id="layout-wrapper" >
             {% block content %}{% endblock content %}
+           
             {% include "includes/loginscripts.html" %}
         </div>
         <div class="rightbar-overlay"></div>
