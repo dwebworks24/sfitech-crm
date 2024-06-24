@@ -52,6 +52,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'core.urls'
+AUTH_USER_MODEL = 'home.Users'
 
 LOGIN_REDIRECT_URL = "home" 
 LOGOUT_REDIRECT_URL = "home" 
