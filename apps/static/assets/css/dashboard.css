@@ -1,0 +1,31 @@
+[data-bs-theme=dark] {
+    --bs-body-bg: #000!important;
+}
+.card {
+    --bs-card-bg: #141A30!important;
+    
+
+}
+
+:root [data-topbar=dark], [data-bs-theme=light] [data-topbar=dark] {
+    --bs-header-bg: #141A30!important;
+
+}
+.form-control {
+    background-color:#2A2F4D!important;
+}
+.btn-primary{
+    --bs-btn-bg: #3241FF;
+}
+.table>:not(caption)>*>* {
+    color: #fff!important;
+
+}
+
+[data-bs-theme=dark][data-sidebar=dark] {
+    --bs-sidebar-dark-bg:  #141A30!important;
+}
+.table{
+    --bs-table-bg:#141A30!important;
+    ;
+}
