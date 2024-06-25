@@ -29,3 +29,28 @@
     --bs-table-bg:#141A30!important;
     ;
 }
+.nav-tabs-customs .nav-item .nav-link.active {
+    background-color: #3241FF!important; 
+    color: #fff!important;
+    
+    
+   
+}
+.btn-width{
+    min-width:100px!important;
+    text-align: center!important;
+   
+
+}
+.border-radius-button{
+    
+    border: none!important;
+    padding:5px!important;
+    --bs-card-spacer-y: 1rem!important;
+
+}
+.bg-light-gray{
+    border: 1px solid #79747E!important;
+    background: #2A2F4D!important;
+    ;
+}
