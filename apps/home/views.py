@@ -118,19 +118,28 @@ def payouts(request):
     except:
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
+
+def collect(request):
+    context ={'segment': 'collect'}
+    try:
+        html_template = loader.get_template('home/collect.html')
+        return HttpResponse(html_template.render(context, request))
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(request))
     
 
-
-# @login_required
-# def logout_view(request):
-#     context ={}
-#     try:
-#         logout(request)
-#         return redirect('/')
-#     except template.TemplateDoesNotExist:
-#         html_template = loader.get_template('uifiles/page-404.html')
-#         return HttpResponse(html_template.render(request))
-#     except:
-#         html_template = loader.get_template('uifiles/page-500.html')
-#         return HttpResponse(html_template.render(request))
-    
+def utility_payments(request):
+    context ={'segment': 'utility_payments'}
+    try:
+        html_template = loader.get_template('home/utility_payments.html')
+        return HttpResponse(html_template.render(context, request))
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(request))
