@@ -10,5 +10,7 @@ urlpatterns = [
     path('profile/', views.profile, name='profile'),
     path('contactbook/', views.contactbook, name='contactbook'),
     path('cards/', views.cards, name='cards'),
+    path('collect/', views.collect, name='collect'),
+    path('utility_payments/', views.utility_payments, name='utility_payments'),
 
 ]
