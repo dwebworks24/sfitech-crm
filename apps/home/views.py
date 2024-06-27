@@ -183,3 +183,15 @@ def statements(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
 
+
+def contactbook(request):
+    context ={'segment': 'contactbook'}
+    try:
+        html_template = loader.get_template('home/contactbook/contactbook.html')
+        return HttpResponse(html_template.render(context, request))
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(request))

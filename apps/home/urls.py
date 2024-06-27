@@ -15,5 +15,6 @@ urlpatterns = [
     path('merchant_device/', views.merchant_device, name='merchant_device'),
     path('settlements/', views.settlements, name='settlements'),
     path('statements/', views.statements, name='statements'),
+    path('contactbook/', views.contactbook, name='contactbook'),
 
 ]

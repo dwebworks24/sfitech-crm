@@ -54,3 +54,8 @@
     background: #2A2F4D!important;
     ;
 }
+
+.btn-secondary {
+    --bs-btn-bg: #2A2F4D!important;
+    
+}
