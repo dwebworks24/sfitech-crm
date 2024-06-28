@@ -52,10 +52,18 @@
 .bg-light-gray{
     border: 1px solid #79747E!important;
     background: #2A2F4D!important;
-    ;
+   
 }
 
 .btn-secondary {
     --bs-btn-bg: #2A2F4D!important;
     
 }
+.bg-custom-card{
+    background: #2A2F4D!important;
+
+}
+.bg-payment{
+    background:#141A30!important;
+}
+
