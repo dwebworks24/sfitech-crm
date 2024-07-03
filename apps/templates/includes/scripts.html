@@ -1,59 +1,97 @@
 {% load static %}
-        <!-- JAVASCRIPT -->
-        <script src="{% static 'assets/libs/jquery/jquery.min.js' %}"></script>
-        <script src="{% static 'assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-        <script src="{% static 'assets/libs/metismenu/metisMenu.min.js' %}"></script>
-        <script src="{% static 'assets/libs/simplebar/simplebar.min.js' %}"></script>
-        <script src="{% static 'assets/libs/node-waves/waves.min.js' %}"></script>
-        <script src="{% static 'assets/libs/feather-icons/feather.min.js' %}"></script>
+<!-- JAVASCRIPT -->
+<script src="{% static 'assets/libs/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/libs/metismenu/metisMenu.min.js' %}"></script>
+<script src="{% static 'assets/libs/simplebar/simplebar.min.js' %}"></script>
+<script src="{% static 'assets/libs/node-waves/waves.min.js' %}"></script>
+<script src="{% static 'assets/libs/feather-icons/feather.min.js' %}"></script>
+<!-- Sweet Alerts js -->
+<script src="{% static 'assets/libs/sweetalert2/sweetalert2.min.js' %}"></script>
 
-        
-        <!-- pace js -->
-        <script src="{% static 'assets/libs/pace-js/pace.min.js' %}"></script>
-        <script src="{% static 'assets/js/pages/invoices-list.init.js' %}"></script>
-        <script src="{% static 'assets/libs/flatpickr/flatpickr.min.js' %}"></script>
-        <!-- apexcharts -->
-        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js' %}"></script>
+<!-- Sweet alert init js-->
+<script src="{% static 'assets/js/pages/sweetalert.init.js' %}"></script>
 
-        <!-- Plugins js-->
-        <script src="{% static 'assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js' %}"></script>
-        <script src="{% static 'assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js' %}"></script>
-        <!-- dashboard init -->
-        <script src="{% static 'assets/js/pages/dashboard.init.js' %}"></script>
+<!-- pace js -->
+<script src="{% static 'assets/libs/pace-js/pace.min.js' %}"></script>
+<script src="{% static 'assets/js/pages/invoices-list.init.js' %}"></script>
+<script src="{% static 'assets/libs/flatpickr/flatpickr.min.js' %}"></script>
+<!-- apexcharts -->
+<script src="{% static 'assets/libs/apexcharts/apexcharts.min.js' %}"></script>
 
-        <script src="{% static 'assets/js/app.js' %}"></script>
-        
-         <!-- Required datatable js -->
-        <script src="{% static 'assets/libs/datatables.net/js/jquery.dataTables.min.js' %}"></script>
-        <script src="{% static 'assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %}"></script>
-        <script src="{% static 'assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
-        <script src="{% static 'assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js' %}"></script>
-        <script src="{% static 'assets/libs/jszip/jszip.min.js' %}"></script>
-        <script src="{% static 'assets/libs/pdfmake/build/pdfmake.min.js' %}"></script>
-        <script src="{% static 'assets/libs/pdfmake/build/vfs_fonts.js' %}"></script>
-        <script src="{% static 'assets/libs/datatables.net-buttons/js/buttons.html5.min.js' %}"></script>
-        <script src="{% static 'assets/libs/datatables.net-buttons/js/buttons.print.min.js' %}"></script>
-        <script src="{% static 'assets/libs/datatables.net-buttons/js/buttons.colVis.min.js' %}"></script>
-        <script src="{% static 'assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
-        <script src="{% static 'assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js' %}"></script>
-        <script src="{% static 'assets/js/pages/datatables.init.js' %}"></script>   
+<!-- Plugins js-->
+<script src="{% static 'assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js' %}"></script>
+<script
+        src="{% static 'assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js' %}"></script>
+<!-- dashboard init -->
+<script src="{% static 'assets/js/pages/dashboard.init.js' %}"></script>
 
-        <script>
-                feather.replace();
-        </script>
+<script src="{% static 'assets/js/app.js' %}"></script>
+<!-- Required datatable js -->
+<script src="{% static 'assets/libs/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %}"></script>
+<script src="{% static 'assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js' %}"></script>
+<script src="{% static 'assets/libs/jszip/jszip.min.js' %}"></script>
+<script src="{% static 'assets/libs/pdfmake/build/pdfmake.min.js' %}"></script>
+<script src="{% static 'assets/libs/pdfmake/build/vfs_fonts.js' %}"></script>
+<script src="{% static 'assets/libs/datatables.net-buttons/js/buttons.html5.min.js' %}"></script>
+<script src="{% static 'assets/libs/datatables.net-buttons/js/buttons.print.min.js' %}"></script>
+<script src="{% static 'assets/libs/datatables.net-buttons/js/buttons.colVis.min.js' %}"></script>
+<script src="{% static 'assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static 'assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js' %}"></script>
+<script src="{% static 'assets/js/pages/datatables.init.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+<script>
+        feather.replace();
+</script>
+
+
+<script>
+        function show_success(message, classType = 'success') {
+                Swal.fire({ text: message, icon: classType });
+        }
+
+        function show_error(message) {
+                Swal.fire({ text: message, icon: "error" });
+        }
+
+        function show_msg_callback(message, classType = 'success', callback) {
+                Swal.fire({ text: message, icon: classType }).then((result) => callback());
+        }
+
+        function confirm_dialog(title, message, callback, cancelText = 'No', confirmText = 'Yes', buttonTitle = null) {
+                Swal.fire({
+                        title: title,
+                        text: message,
+                        icon: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#3085d6",
+                        cancelButtonColor: "#d33",
+                        cancelButtonText: cancelText,
+                        confirmButtonText: confirmText,
+                        reverseButtons: true
+                }).then((result) => {
+                        if (result.isConfirmed) {
+                                callback(buttonTitle)
+                        }
+                });
+        }
+</script>
+
 
 <script>
         function showDetails(entryId) {
-            // Here you can fetch details using AJAX or directly update modal content
-            // For simplicity, replacing content with static text
-            var entryDetails = "Invoice ID: " + entryId + "<br>"
-                             + "Date: 10 Mar, 2024<br>"
-                             + "Account Holder: Christopher Lee<br>"
-                             + "Amount: $2,000<br>"
-                             + "Next Date: 25 Mar, 2024<br>"
-                             + "Status: Active<br>";
-    
-            document.getElementById("entryDetailsContent").innerHTML = entryDetails;
-            $('#entryDetailsModal').modal('show');
+                // Here you can fetch details using AJAX or directly update modal content
+                // For simplicity, replacing content with static text
+                var entryDetails = "Invoice ID: " + entryId + "<br>"
+                        + "Date: 10 Mar, 2024<br>"
+                        + "Account Holder: Christopher Lee<br>"
+                        + "Amount: $2,000<br>"
+                        + "Next Date: 25 Mar, 2024<br>"
+                        + "Status: Active<br>";
+
+                document.getElementById("entryDetailsContent").innerHTML = entryDetails;
+                $('#entryDetailsModal').modal('show');
         }
-    </script>
+</script>
