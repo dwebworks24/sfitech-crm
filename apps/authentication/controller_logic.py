@@ -57,3 +57,25 @@ def mobial_otp_verify_logic(request):
         return JsonResponse({'error': 'Invalid OTP'}, status=status.HTTP_400_BAD_REQUEST)
     except Exception as e:
         return JsonResponse({'error': f'{e}'}, status=401)
+    
+
+def user_register(request):
+    context = {}
+    try:    
+        country = request.POST.get('country')
+        phone_number = request.POST.get('phone_number')
+        email = request.POST.get('email')
+        pan = request.POST.get('pan')
+
+        if Users.objects.filter(email=email).exists() or Users.objects.filter(phone=phone_number).exists():
+            return JsonResponse({'error': 'User with this email or phone number already exists'}, status=401)
+        
+        user = Users.objects.create(
+            phone=phone_number,
+            email=email,
+            pan_number=pan
+        )
+        user.save()
+        return JsonResponse({'path': '/'},status=status.HTTP_200_OK)
+    except Exception as e:
+        return JsonResponse({'error': f'{e}'}, status=401)
