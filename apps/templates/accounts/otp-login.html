@@ -15,16 +15,17 @@
                         <img src="{% static 'assets/images/brands/logo-m.png' %}" alt="" class="img-fluid"> <span class="logo-txt"></span>
                     </a>
                 </div>
-                <div class="d-flex flex-column  justify-content-center ">
+                <div class="d-flex flex-column  justify-content-center align-items-center ">
                     
                     <div class="text-center">
-                        <h5 class="mb-0">One Place For Everything Banking</h5>
-                        <p class="text-muted mt-2">Enter the new era of business banking. Automate and simplify all your business banking operations with our unified interface.</p>
+
+                        <h2 class="mb-0">One Place For Everything Banking</h2>
+                        <p class="text-muted mt-2 ">Enter the new era of business banking. Automate and simplify all your business banking operations with our unified interface.</p>
                     </div>
                     <!-- end bubble effect -->
                    <div class="pt-0 px-5">
                         
-                            <img src="{% static 'assets/images/brands/homepage-desgin.png' %}" alt="" class="img-fluid d-block">
+                            <img src="{% static 'assets/images/brands/homepage-desgin.png' %}"  alt="" class="img-fluid img-fix d-block">
                            
                         </div>       
                         
@@ -41,7 +42,8 @@
                                     <h5 class="mb-0">Hey Welcome Back !</h5>
                                     <p class="text-muted mt-2">Securely Login your Instantpay Business account</p>
                                 </div>
-                                <form class="mt-4 pt-2" action="index.html">
+                                <form class="mt-4 pt-2">
+                                    {%  csrf_token  %}
                                     <div class="mb-3">
                                         <label class="form-label">Country</label>
                                         <select required class="form-control form-select">
@@ -56,20 +58,20 @@
                                             <div class="flex-grow-1">
                                                 <label class="form-label">Mobile Number</label>
                                             </div>
-                                            <div class="flex-shrink-0">
+                                            <!-- <div class="flex-shrink-0">
                                                 <div class="">
                                                     <a href="auth-recoverpw.html" class="text-muted">Forgot password?</a>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         
                                         <div class="input-group auth-pass-inputgroup">
                                            
-                                            <input type="input" class="form-control" placeholder="Enter password" aria-label="Password" aria-describedby="password-addon">
-                                            <button class="btn btn-light shadow-none ms-0" type="button" id="password-addon"><i class="mdi mdi-eye-outline"></i></button>
+                                            <input type="phone" class="form-control" id="phone_number" name="phone_number" placeholder="Enter Phone number" aria-label="Phone number" aria-describedby="Phone number">
+                                            <!-- <button class="btn btn-light shadow-none ms-0" type="button" id="password-addon"><i class="mdi mdi-eye-outline"></i></button> -->
                                         </div>
                                     </div>
-                                    <div class="row mb-4">
+                                    <!-- <div class="row mb-4">
                                         <div class="col">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="remember-check">
@@ -79,12 +81,12 @@
                                             </div>  
                                         </div>
                                         
-                                    </div>
-                                    <div class="mb-3">
-                                        <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">Request OTP</button>
+                                    </div> -->
+                                    <div class="mb-3 mt-3">
+                                        <button class="btn btn-primary w-100 waves-effect waves-light" type="button" onclick="sendOTP()">Request OTP</button>
                                     </div>
                                 </form>
-
+<!-- 
                                 <div class="mt-4 pt-2 text-center">
                                     <div class="signin-other-title">
                                         <h5 class="font-size-14 mb-3 text-muted fw-medium">- Sign in with -</h5>
@@ -107,14 +109,14 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> -->
 
                                 <div class="mt-5 text-center">
-                                    <p class="text-muted mb-0">Don't have an account ? <a href="/sigin/" class="text-primary fw-semibold"> Signup now </a> </p>
+                                    <p class="text-muted mb-0">Don't have an account ? <a href="/register/" class="text-primary fw-semibold"> Signup now </a> </p>
                                 </div>
-                                <div class="mt-5 text-center">
+                                <!-- <div class="mt-5 text-center">
                                     <p class="text-muted mb-0">By Signing In, you agree to the Terms & Privacy Policy </p>
-                                </div>
+                                </div> -->
                                 
                             </div>
                             <!-- <div class="mt-4 mt-md-5 text-center">
@@ -135,5 +137,5 @@
 </div>
 {% endblock content %}
 {% block javascripts %}
-
+<script src="{% static 'assets/js/authentication/send_otp.js' %}"></script>
 {% endblock javascripts %}

@@ -107,17 +107,91 @@ def cards(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
 
+def payouts(request):
+    context ={'segment': 'payouts'}
+    try:
+        html_template = loader.get_template('home/dashboard.html')
+        return HttpResponse(html_template.render(context, request))
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(request))
 
-# @login_required
-# def logout_view(request):
-#     context ={}
-#     try:
-#         logout(request)
-#         return redirect('/')
-#     except template.TemplateDoesNotExist:
-#         html_template = loader.get_template('uifiles/page-404.html')
-#         return HttpResponse(html_template.render(request))
-#     except:
-#         html_template = loader.get_template('uifiles/page-500.html')
-#         return HttpResponse(html_template.render(request))
+def collect(request):
+    context ={'segment': 'collect'}
+    try:
+        html_template = loader.get_template('home/collect.html')
+        return HttpResponse(html_template.render(context, request))
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(request))
     
+
+def utility_payments(request):
+    context ={'segment': 'utility_payments'}
+    try:
+        html_template = loader.get_template('home/utility_payments.html')
+        return HttpResponse(html_template.render(context, request))
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(request))
+    
+
+def merchant_device(request):
+    context ={'segment': 'merchant_device'}
+    try:
+        html_template = loader.get_template('home/merchant_device.html')
+        return HttpResponse(html_template.render(context, request))
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(request))
+
+def settlements(request):
+    context ={'segment': 'settlement'}
+    try:
+        html_template = loader.get_template('home/settlement/settlement.html')
+        return HttpResponse(html_template.render(context, request))
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(request))
+    
+
+
+def statements(request):
+    context ={'segment': 'statements'}
+    try:
+        html_template = loader.get_template('home/statements/statement.html')
+        return HttpResponse(html_template.render(context, request))
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(request))
+
+
+def contactbook(request):
+    context ={'segment': 'contactbook'}
+    try:
+        html_template = loader.get_template('home/contactbook/contactbook.html')
+        return HttpResponse(html_template.render(context, request))
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(request))

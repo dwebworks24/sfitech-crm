@@ -18,10 +18,10 @@ def otp_login(request):
         return HttpResponse(html_template.render(request))
     
 
-def sigin(request):
+def otp_validate(request):
     context ={'segment': 'index'}
     try:
-        html_template = loader.get_template('accounts/sigin.html')
+        html_template = loader.get_template('accounts/otp-validate.html')
         return HttpResponse(html_template.render(context, request))
     except template.TemplateDoesNotExist:
         html_template = loader.get_template('uifiles/page-404.html')
