@@ -35,3 +35,13 @@
 .text-primary {
     color: #3241FF!important ;
 }
+.img-fix{
+    max-width: 450px!important;
+}
+
+@media (min-width: 310px) and (max-width:576px) {
+    .img-fix{
+        max-width: 100%!important;
+    }
+
+}

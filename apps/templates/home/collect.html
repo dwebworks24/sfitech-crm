@@ -26,251 +26,142 @@
             </div>
         
             <div class="row">
-                <div class="col-xl-4">
-                    <div class="card">
-                        <div class="card-header align-items-center d-flex">
-                            <h4 class="card-title mb-0 flex-grow-1">Scan For Payment</h4>
+                <div class="col-xl-3">
+                    <div class="card bg-white">
+                        <div class="card-header align-items-center d-flex bg-white">
+                            <h4 class="card-title mb-0 flex-grow-1 text-center text-primary">Scan For Payment</h4>
                         </div><!-- end card header -->
                         <div class="card-body m-auto bg-white p-3 mt-3 mb-3">
                             <img src="{% static 'assets/images/brands/qr-code-svgrepo-com.png' %}" alt="" class="img-fluid ">
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-8">
+                <div class="col-xl-9">
+                    
                     <table id="datatable-buttons"
-                        class="table table-bordered dt-responsive nowrap w-100 dataTable no-footer dtr-inline"
-                        aria-describedby="datatable-buttons_info" style="width: 1094px;">
-                        <thead>
-                            <tr>
-                                <th class="sorting sorting_asc" tabindex="0" aria-controls="datatable-buttons"
-                                    rowspan="1" colspan="1" style="width: 172.333px;" aria-sort="ascending"
-                                    aria-label="Name: activate to sort column descending">Name</th>
-                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1"
-                                    colspan="1" style="width: 258.333px;"
-                                    aria-label="Position: activate to sort column ascending">
-                                    Position</th>
-                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1"
-                                    colspan="1" style="width: 124.333px;"
-                                    aria-label="Office: activate to sort column ascending">Office
-                                </th>
-                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1"
-                                    colspan="1" style="width: 58.3333px;"
-                                    aria-label="Age: activate to sort column ascending">Age</th>
-                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1"
-                                    colspan="1" style="width: 118.333px;"
-                                    aria-label="Start date: activate to sort column ascending">Start
-                                    date</th>
-                                <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1"
-                                    colspan="1" style="width: 106.333px;"
-                                    aria-label="Salary: activate to sort column ascending">Salary
-                                </th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr class="odd">
-                                <td class="dtr-control sorting_1" tabindex="0">Airi Satou</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>33</td>
-                                <td>2008/11/28</td>
-                                <td>$162,700</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="sorting_1 dtr-control">Angelica Ramos</td>
-                                <td>Chief Executive Officer (CEO)</td>
-                                <td>London</td>
-                                <td>47</td>
-                                <td>2009/10/09</td>
-                                <td>$1,200,000</td>
-                            </tr>
-                            <tr class="odd">
-                                <td class="dtr-control sorting_1" tabindex="0">Ashton Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>San Francisco</td>
-                                <td>66</td>
-                                <td>2009/01/12</td>
-                                <td>$86,000</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="sorting_1 dtr-control">Bradley Greer</td>
-                                <td>Software Engineer</td>
-                                <td>London</td>
-                                <td>41</td>
-                                <td>2012/10/13</td>
-                                <td>$132,000</td>
-                            </tr>
-                            <tr class="odd">
-                                <td class="sorting_1 dtr-control">Brenden Wagner</td>
-                                <td>Software Engineer</td>
-                                <td>San Francisco</td>
-                                <td>28</td>
-                                <td>2011/06/07</td>
-                                <td>$206,850</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="dtr-control sorting_1" tabindex="0">Brielle Williamson
-                                </td>
-                                <td>Integration Specialist</td>
-                                <td>New York</td>
-                                <td>61</td>
-                                <td>2012/12/02</td>
-                                <td>$372,000</td>
-                            </tr>
-                            <tr class="odd">
-                                <td class="sorting_1 dtr-control">Bruno Nash</td>
-                                <td>Software Engineer</td>
-                                <td>London</td>
-                                <td>38</td>
-                                <td>2011/05/03</td>
-                                <td>$163,500</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="sorting_1 dtr-control">Caesar Vance</td>
-                                <td>Pre-Sales Support</td>
-                                <td>New York</td>
-                                <td>21</td>
-                                <td>2011/12/12</td>
-                                <td>$106,450</td>
-                            </tr>
-                            <tr class="odd">
-                                <td class="sorting_1 dtr-control">Cara Stevens</td>
-                                <td>Sales Assistant</td>
-                                <td>New York</td>
-                                <td>46</td>
-                                <td>2011/12/06</td>
-                                <td>$145,600</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="dtr-control sorting_1" tabindex="0">Cedric Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>22</td>
-                                <td>2012/03/29</td>
-                                <td>$433,060</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="sorting_1 dtr-control">Caesar Vance</td>
-                                <td>Pre-Sales Support</td>
-                                <td>New York</td>
-                                <td>21</td>
-                                <td>2011/12/12</td>
-                                <td>$106,450</td>
-                            </tr>
-                            <tr class="odd">
-                                <td class="sorting_1 dtr-control">Cara Stevens</td>
-                                <td>Sales Assistant</td>
-                                <td>New York</td>
-                                <td>46</td>
-                                <td>2011/12/06</td>
-                                <td>$145,600</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="dtr-control sorting_1" tabindex="0">Cedric Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>22</td>
-                                <td>2012/03/29</td>
-                                <td>$433,060</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="sorting_1 dtr-control">Caesar Vance</td>
-                                <td>Pre-Sales Support</td>
-                                <td>New York</td>
-                                <td>21</td>
-                                <td>2011/12/12</td>
-                                <td>$106,450</td>
-                            </tr>
-                            <tr class="odd">
-                                <td class="sorting_1 dtr-control">Cara Stevens</td>
-                                <td>Sales Assistant</td>
-                                <td>New York</td>
-                                <td>46</td>
-                                <td>2011/12/06</td>
-                                <td>$145,600</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="dtr-control sorting_1" tabindex="0">Cedric Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>22</td>
-                                <td>2012/03/29</td>
-                                <td>$433,060</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="sorting_1 dtr-control">Caesar Vance</td>
-                                <td>Pre-Sales Support</td>
-                                <td>New York</td>
-                                <td>21</td>
-                                <td>2011/12/12</td>
-                                <td>$106,450</td>
-                            </tr>
-                            <tr class="odd">
-                                <td class="sorting_1 dtr-control">Cara Stevens</td>
-                                <td>Sales Assistant</td>
-                                <td>New York</td>
-                                <td>46</td>
-                                <td>2011/12/06</td>
-                                <td>$145,600</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="dtr-control sorting_1" tabindex="0">Cedric Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>22</td>
-                                <td>2012/03/29</td>
-                                <td>$433,060</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="sorting_1 dtr-control">Caesar Vance</td>
-                                <td>Pre-Sales Support</td>
-                                <td>New York</td>
-                                <td>21</td>
-                                <td>2011/12/12</td>
-                                <td>$106,450</td>
-                            </tr>
-                            <tr class="odd">
-                                <td class="sorting_1 dtr-control">Cara Stevens</td>
-                                <td>Sales Assistant</td>
-                                <td>New York</td>
-                                <td>46</td>
-                                <td>2011/12/06</td>
-                                <td>$145,600</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="dtr-control sorting_1" tabindex="0">Cedric Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>22</td>
-                                <td>2012/03/29</td>
-                                <td>$433,060</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="sorting_1 dtr-control">Caesar Vance</td>
-                                <td>Pre-Sales Support</td>
-                                <td>New York</td>
-                                <td>21</td>
-                                <td>2011/12/12</td>
-                                <td>$106,450</td>
-                            </tr>
-                            <tr class="odd">
-                                <td class="sorting_1 dtr-control">Cara Stevens</td>
-                                <td>Sales Assistant</td>
-                                <td>New York</td>
-                                <td>46</td>
-                                <td>2011/12/06</td>
-                                <td>$145,600</td>
-                            </tr>
-                            <tr class="even">
-                                <td class="dtr-control sorting_1" tabindex="0">Cedric Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>22</td>
-                                <td>2012/03/29</td>
-                                <td>$433,060</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    class="table table-bordered dt-responsive nowrap w-100 dataTable no-footer dtr-inline"
+                    aria-describedby="datatable-buttons_info" style="width: 1094px;">
+                 <thead>
+                     <tr>
+                         <th class="sorting sorting_asc" tabindex="0" aria-controls="datatable-buttons"
+                             rowspan="1" colspan="1" style="width: 172.333px;" aria-sort="ascending"
+                             aria-label="OrderID: activate to sort column descending">OrderID</th>
+                         <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1"
+                             colspan="1" style="width: 258.333px;" aria-label="Beneficiary: activate to sort column ascending">
+                             Beneficiary</th>
+                         <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1"
+                             colspan="1" style="width: 124.333px;" aria-label="Amount: activate to sort column ascending">
+                             Amount</th>
+                         <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1"
+                             colspan="1" style="width: 58.3333px;" aria-label="Mode: activate to sort column ascending">
+                             Mode</th>
+                         <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1"
+                             colspan="1" style="width: 118.333px;" aria-label="Type: activate to sort column ascending">
+                             Type</th>
+                         <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1"
+                             colspan="1" style="width: 106.333px;" aria-label="Time: activate to sort column ascending">
+                             Time</th>
+                         <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1"
+                             colspan="1" style="width: 106.333px;" aria-label="Status: activate to sort column ascending">
+                             Status</th>
+                     </tr>
+                 </thead>
+             
+                 <tbody>
+                     <tr class="odd">
+                         <td class="dtr-control sorting_1" tabindex="0">1</td>
+                         <td>John Doe</td>
+                         <td>500</td>
+                         <td>UPI</td>
+                         <td>Add Money</td>
+                         <td>5:30 PM</td>
+                         <td>Success</td>
+                     </tr>
+                     <tr class="even">
+                         <td class="sorting_1 dtr-control">2</td>
+                         <td>Jane Smith</td>
+                         <td>1000</td>
+                         <td>Card</td>
+                         <td>Add Money</td>
+                         <td>6:00 PM</td>
+                         <td>Failed</td>
+                     </tr>
+                     <tr class="odd">
+                         <td class="dtr-control sorting_1" tabindex="0">3</td>
+                         <td>Robert Brown</td>
+                         <td>750</td>
+                         <td>UPI</td>
+                         <td>Add Money</td>
+                         <td>7:15 PM</td>
+                         <td>Success</td>
+                     </tr>
+                     <tr class="even">
+                         <td class="sorting_1 dtr-control">4</td>
+                         <td>Emily Davis</td>
+                         <td>200</td>
+                         <td>Card</td>
+                         <td>Add Money</td>
+                         <td>8:45 PM</td>
+                         <td>Success</td>
+                     </tr>
+                     <tr class="odd">
+                         <td class="sorting_1 dtr-control" tabindex="0">5</td>
+                         <td>Michael Wilson</td>
+                         <td>650</td>
+                         <td>UPI</td>
+                         <td>Add Money</td>
+                         <td>9:30 PM</td>
+                         <td>Failed</td>
+                     </tr>
+                     <tr class="even">
+                         <td class="dtr-control sorting_1" tabindex="0">6</td>
+                         <td>Olivia Johnson</td>
+                         <td>800</td>
+                         <td>Card</td>
+                         <td>Add Money</td>
+                         <td>10:00 PM</td>
+                         <td>Success</td>
+                     </tr>
+                     <tr class="odd">
+                         <td class="sorting_1 dtr-control">7</td>
+                         <td>William Martin</td>
+                         <td>450</td>
+                         <td>UPI</td>
+                         <td>Add Money</td>
+                         <td>11:30 PM</td>
+                         <td>Success</td>
+                     </tr>
+                     <tr class="even">
+                         <td class="dtr-control sorting_1" tabindex="0">8</td>
+                         <td>Ava Garcia</td>
+                         <td>300</td>
+                         <td>Card</td>
+                         <td>Add Money</td>
+                         <td>12:00 PM</td>
+                         <td>Failed</td>
+                     </tr>
+                     <tr class="odd">
+                         <td class="sorting_1 dtr-control">9</td>
+                         <td>James Rodriguez</td>
+                         <td>900</td>
+                         <td>UPI</td>
+                         <td>Add Money</td>
+                         <td>1:15 PM</td>
+                         <td>Success</td>
+                     </tr>
+                     <tr class="even">
+                         <td class="dtr-control sorting_1" tabindex="0">10</td>
+                         <td>Isabella Martinez</td>
+                         <td>550</td>
+                         <td>Card</td>
+                         <td>Add Money</td>
+                         <td>2:30 PM</td>
+                         <td>Failed</td>
+                     </tr>
+                 </tbody>
+             
+                </table>
+                   
                 </div>
             </div>
         </div>

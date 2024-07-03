@@ -12,5 +12,9 @@ urlpatterns = [
     path('cards/', views.cards, name='cards'),
     path('collect/', views.collect, name='collect'),
     path('utility_payments/', views.utility_payments, name='utility_payments'),
+    path('merchant_device/', views.merchant_device, name='merchant_device'),
+    path('settlements/', views.settlements, name='settlements'),
+    path('statements/', views.statements, name='statements'),
+    path('contactbook/', views.contactbook, name='contactbook'),
 
 ]
