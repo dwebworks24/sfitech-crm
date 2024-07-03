@@ -195,3 +195,18 @@ def contactbook(request):
     except:
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
+
+
+def addinvoice(request):
+    context ={'segment': 'addinvoice'}
+    try:
+        html_template = loader.get_template('home/addinvoice.html')
+        return HttpResponse(html_template.render(context, request))
+    except template.TemplateDoesNotExist:
+        html_template = loader.get_template('uifiles/page-404.html')
+        return HttpResponse(html_template.render(request))
+    except:
+        html_template = loader.get_template('uifiles/page-500.html')
+        return HttpResponse(html_template.render(request))
+    
+    
