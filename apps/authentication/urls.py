@@ -9,7 +9,7 @@ urlpatterns = [
     
     path("send_otp/", controller_logic.mobial_otp_logic, name="send_otp"),
     path("validate_otp/", controller_logic.mobial_otp_verify_logic, name="validate_otp"),
-
+    path('user_register/', controller_logic.user_register, name='user_register'),
 
 ]
     

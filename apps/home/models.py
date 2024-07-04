@@ -55,6 +55,7 @@ class Users(AbstractBaseUser, PermissionsMixin):
     address = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    pan_number = models.CharField(max_length=100, default='', blank=True, null=True)
     otp = models.IntegerField(blank=True, null=True)
     otp_timestamp = models.DateTimeField(default=None,blank=True, null=True)
 
