@@ -32,7 +32,8 @@ def datatables(request):
     except:
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
-
+    
+@login_required(login_url="/")
 def dashtwo(request):
     context ={'segment': 'index'}
     try:
@@ -45,7 +46,7 @@ def dashtwo(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
     
-
+@login_required(login_url="/")
 def loans(request):
     context ={'segment': 'index'}
     try:
@@ -58,6 +59,7 @@ def loans(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
     
+@login_required(login_url="/")  
 def invoices(request):
     context ={'segment': 'index'}
     try:
@@ -70,7 +72,7 @@ def invoices(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
     
-
+@login_required(login_url="/")
 def profile(request):
     context ={'segment': 'index'}
     try:
@@ -82,7 +84,8 @@ def profile(request):
     except:
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
-    
+
+@login_required(login_url="/")    
 def contactbook(request):
     context ={'segment': 'index'}
     try:
@@ -94,7 +97,8 @@ def contactbook(request):
     except:
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
-    
+
+@login_required(login_url="/")    
 def cards(request):
     context ={'segment': 'index'}
     try:
@@ -106,7 +110,8 @@ def cards(request):
     except:
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
-
+    
+@login_required(login_url="/")
 def payouts(request):
     context ={'segment': 'payouts'}
     try:
@@ -119,6 +124,7 @@ def payouts(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
 
+@login_required(login_url="/")
 def collect(request):
     context ={'segment': 'collect'}
     try:
@@ -131,7 +137,7 @@ def collect(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
     
-
+@login_required(login_url="/")
 def utility_payments(request):
     context ={'segment': 'utility_payments'}
     try:
@@ -144,7 +150,7 @@ def utility_payments(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
     
-
+@login_required(login_url="/")
 def merchant_device(request):
     context ={'segment': 'merchant_device'}
     try:
@@ -157,6 +163,7 @@ def merchant_device(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
 
+@login_required(login_url="/")
 def settlements(request):
     context ={'segment': 'settlement'}
     try:
@@ -170,7 +177,7 @@ def settlements(request):
         return HttpResponse(html_template.render(request))
     
 
-
+@login_required(login_url="/")
 def statements(request):
     context ={'segment': 'statements'}
     try:
@@ -183,7 +190,7 @@ def statements(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
 
-
+@login_required(login_url="/")
 def contactbook(request):
     context ={'segment': 'contactbook'}
     try:
