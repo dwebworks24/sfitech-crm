@@ -45,7 +45,14 @@
         </div>
         <div class="rightbar-overlay"></div>
        
-        {% block javascripts %}{% endblock javascripts %}
+        {% block javascripts %}
+        {% endblock javascripts %}
+        <script src="{% static 'assets/js/sweetalerts.js' %}"></script>
+        <!-- Sweet Alerts js -->
+        <script src="{% static 'assets/libs/sweetalert2/sweetalert2.min.js' %}"></script>
+
+        <!-- Sweet alert init js-->
+        <script src="{% static 'assets/js/pages/sweetalert.init.js' %}"></script>
     </body>
 
 </html>
