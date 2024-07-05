@@ -20,7 +20,7 @@ def otp_login(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
     
-@login_required
+
 def otp_validate(request):
     context ={'segment': 'index'}
     try:
