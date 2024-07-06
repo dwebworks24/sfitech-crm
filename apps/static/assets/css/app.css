@@ -4979,3 +4979,7 @@ body[data-layout=horizontal] .chat-conversation {
  background: #2A2F4D!important;
 
 }
+
+.dash-cg{
+  max-width: 3rem!important;
+}

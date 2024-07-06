@@ -59,6 +59,15 @@
     --bs-btn-bg: #2A2F4D!important;
     
 }
+
+.grid-container {
+    display: grid!important;
+    grid-template-columns: repeat(5, 1fr)!important; /* 1fr divides the space equally */
+    gap: 0!important; /* No gap between items */
+}
+.grid-item {
+    text-align: center!important;
+}
 .bg-custom-card{
     background: #2A2F4D!important;
 

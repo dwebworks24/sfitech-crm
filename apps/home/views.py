@@ -111,7 +111,7 @@ def cards(request):
         html_template = loader.get_template('uifiles/page-500.html')
         return HttpResponse(html_template.render(request))
     
-@login_required(login_url="/")
+# @login_required(login_url="/")
 def payouts(request):
     context ={'segment': 'payouts'}
     try:
