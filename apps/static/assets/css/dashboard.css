@@ -75,4 +75,22 @@
 .bg-payment{
     background:#141A30!important;
 }
-
+.footer-bg-cr{
+    background: #141A30!important;
+    color: #fff!important;
+}
+.fintech-bg {
+    background-image: url("../images/users/bg-card-imk.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 150px!important;
+    border-radius: 10px;
+   
+   
+  }
+  .text-primary{
+    color: #3241FF!important;
+    
+  }
+ 
