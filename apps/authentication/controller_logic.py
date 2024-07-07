@@ -68,9 +68,11 @@ def user_register(request):
         pan = request.POST.get('pan')
 
         if Users.objects.filter(email=email).exists() or Users.objects.filter(phone=phone_number).exists():
-            return JsonResponse({'error': 'User with this email or phone number already exists'}, status=401)
+            return JsonResponse({'error': 'User with this email or phone number already exists'}, status=status.HTTP_400_BAD_REQUEST)
         
+        username = email.replace('.', '').split('@')[0]
         user = Users.objects.create(
+            username= username,
             phone=phone_number,
             email=email,
             pan_number=pan
