@@ -17,5 +17,6 @@ urlpatterns = [
     path('statements/', views.statements, name='statements'),
     path('contactbook/', views.contactbook, name='contactbook'),
     path('addinvoice/', views.addinvoice, name='addinvoice'),
+    path('device/', views.device, name='device'),
 
 ]
