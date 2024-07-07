@@ -93,4 +93,13 @@
     color: #3241FF!important;
     
   }
+  .utility-card{
+    max-width: 110px!important;
+  }
  
+  @media (min-width: 310px) and (max-width:576px) {
+    .utility-card{
+        max-width: 100%!important;
+      }
+     
+}
