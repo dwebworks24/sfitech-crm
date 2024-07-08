@@ -16,12 +16,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0 font-size-18">Profile</h4>
+                        <h4 class="mb-sm-0 font-size-18">Merchant devices</h4>
 
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="javascript: void(0);">Contacts</a></li>
-                                <li class="breadcrumb-item active">Profile</li>
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Home</a></li>
+                                <li class="breadcrumb-item active">Merchant devices</li>
                             </ol>
                         </div>
 
@@ -32,19 +32,24 @@
 
             <div class="row">
                 <div class="col-xl-12 col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
-                           
-
-                            <ul class="nav nav-tabs-custom card-header-tabs border-top mt-4" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link px-3 active" data-bs-toggle="tab" href="#overview" role="tab">Overview</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-3" data-bs-toggle="tab" href="#about" role="tab">About</a>
-                                </li>
-                               
+                    <div class="card merchant-card " >
+                        <div class="card-body p-0">
+                            <ul class="nav nav-pills nav-justified " id="pills-tab" role="tablist">
+                            <li class="nav-item waves-effect waves-light   btn-rounded">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#overview"  role="tab">
+                                    <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                    <span class="d-none d-sm-block">Home</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item waves-effect waves-light btn-rounded">
+                                <a class="nav-link" data-bs-toggle="tab" href="#about" role="tab">
+                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                    <span class="d-none d-sm-block">Profile</span> 
+                                </a>
+                            </li>
                             </ul>
+
+                           
                         </div>
                         <!-- end card body -->
                     </div>
@@ -64,28 +69,28 @@
                                                     </div>
                                                     <div class=" col-lg-12 device-bg card p-1 mb-xl-0 mt-4">
                                                         <div class="row p-3">
-                                                            <div class="col-lg-6 d-flex flex-wrap">
+                                                            <div class="col-lg-6  col-12 d-flex flex-column justify-content-center align-items-center">
                                                                 <img src="{% static 'assets/images/users/2.png' %}" alt="" class="img-fluid d-block mb-2">
-                                                                    <p class="font-size-15 text-white">Voice Payment
+                                                                    <p class="font-size-15 text-white text-center">Voice Payment
                                                                         Confirmation</p>
                                                                    
                                                                 
                                                             </div>
-                                                            <div class="col-lg-6">
+                                                            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
                                                                 <img src="{% static 'assets/images/users/1.png' %}" alt="" class="img-fluid d-block mb-2">
-                                                                <p class="font-size-15 text-white">Available in 11
+                                                                <p class="font-size-15 text-white text-center">Available in 11
                                                                     Languages</p>
                                                             </div>
-                                                            <div class="col-lg-6 d-flex flex-wrap">
+                                                            <div class="col-lg-6 d-flex flex-wrap flex-column justify-content-center align-items-center">
                                                                 <img src="{% static 'assets/images/users/4.png' %}" alt="" class="img-fluid d-block mb-2">
-                                                                <p class="font-size-15 text-white">Up to 7- day
+                                                                <p class="font-size-15 text-white text-center">Up to 7- day
                                                                     battery life</p>
                                                                
                                                             
                                                         </div>
-                                                        <div class="col-lg-6   ">
+                                                        <div class="col-lg-6  d-flex flex-wrap flex-column justify-content-center align-items-center ">
                                                             <img src="{% static 'assets/images/users/3.png' %}" alt="" class="img-fluid d-block mb-2">
-                                                            <p class="font-size-15 text-white">5G Network
+                                                            <p class="font-size-15 text-white text-center">5G Network
                                                                 Connectivity</p>
                                                         </div>
                                                         </div>
@@ -95,7 +100,7 @@
                                                         
                                                     </div>
                                                 </div>
-                                                <div class="col-xl-8  card device-bg">
+                                                <div class="col-xl-8  card device-bg p-4">
                                                     
                                                     <div class="row mt-4 ">
                                                        
@@ -191,44 +196,127 @@
 
                         <div class="tab-pane" id="about" role="tabpanel">
                             <div class="card">
-                                <div class="card-header">
-                                    <h5 class="card-title mb-0">About</h5>
-                                </div>
+                               
                                 <div class="card-body">
                                     <div>
                                         <div class="pb-3">
-                                            <h5 class="font-size-15">Bio :</h5>
-                                            <div class="text-muted">
-                                                <p class="mb-2">Hi I'm Phyllis Gatlin, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
-                                                <p class="mb-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at it has a more-or-less normal distribution of letters</p>
-                                                <p>It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth.</p>
-
-                                                <ul class="list-unstyled mb-0">
-                                                    <li class="py-1"><i class="mdi mdi-circle-medium me-1 text-success align-middle"></i>Donec vitae sapien ut libero venenatis faucibus</li>
-                                                    <li class="py-1"><i class="mdi mdi-circle-medium me-1 text-success align-middle"></i>Quisque rutrum aenean imperdiet</li>
-                                                    <li class="py-1"><i class="mdi mdi-circle-medium me-1 text-success align-middle"></i>Integer ante a consectetuer eget</li>
-                                                </ul>
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                    <div>
+                                                        <img src="{% static 'assets/images/flags/swipe.png' %}" alt="" class="img-fluid d-block">
+                                                    </div>
+                                                    <div class=" col-lg-12 device-bg card p-1 mb-xl-0 mt-4">
+                                                        <div class="row p-3">
+                                                            <div class="col-lg-6  col-12 d-flex flex-column justify-content-center align-items-center">
+                                                                <img src="{% static 'assets/images/flags/1.png' %}" alt="" class="img-fluid d-block mb-2">
+                                                                    
+                                                                   
+                                                                
+                                                            </div>
+                                                            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                                                                <img src="{% static 'assets/images/flags/2.png' %}" alt="" class="img-fluid d-block mb-2">
+                                                                
+                                                            </div>
+                                                            <div class="col-lg-6 d-flex flex-wrap flex-column justify-content-center align-items-center">
+                                                                <img src="{% static 'assets/images/flags/3.png' %}" alt="" class="img-fluid d-block mb-2">
+                                                               
+                                                               
+                                                            
+                                                        </div>
+                                                        <div class="col-lg-6  d-flex flex-wrap flex-column justify-content-center align-items-center ">
+                                                            <img src="{% static 'assets/images/flags/select2/card.png' %}" alt="" class="img-fluid d-block mb-2">
+                                                            <p class="font-size-15 text-white text-center">Credit card
+                                                                </p>
+                                                        </div>
+                                                        </div>
+                                                        
+                                                       
+    
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-8  card device-bg p-4">
+                                                    
+                                                    <div class="row mt-4 ">
+                                                       
+                                                            
+                                                         <div class="col-xl-12 col-md-12 d-flex flex-column flex-wrap   mb-2">
+                                                            <h5 class="font-size-22">Card Swipe Machine</h5>
+                                                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                                            <h5>₹1299</h5>
+                                                            <button type="button" class="btn btn-primary w-30">Book Now For ₹1299</button>  
+                                                        </div>
+                                                            <p class="font-size-18">Rent: ₹350/Month</p>
+                                                           
+                                                           
+                                                        </div>
+                                                        
+                                                            
+                                                           
+                                                       
+                                                       
+                                        
+                                                       <!-- end col -->
+                                                       <div class="col-xl-12 col-md-12   ">
+                                                        <!-- card -->
+                                                        <div class="card card-h-100 bg-custom-device ">
+                                                            <div class="card-body">
+                                                                
+                                                                
+                                                                <div class="d-flex  flex-wrap  align-items-center ">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-12 col-md-12 d-flex flex-column flex-wrap   mb-2">
+                                                                    <h5 class="font-size-22">Delivery Address</h5>
+                                                                    <p class="font-size-18">123, East Street, Main Road, District, State,-123 456</p>
+                                                                   
+                                                                    <button type="button" class="btn btn-primary w-50">Edit Address</button>  
+                                                                </div>
+                                                                
+                                                                    
+                                                                    </div>
+                                                                </div>
+                                                               
+                                                                
+                                                                
+                                                            </div>
+                                                        </div><!-- end card -->
+                                                    </div><!-- end col -->
+                                                        <!-- end col -->
+                                                       <!-- end col -->
+                                                       <div class="col-xl-12 col-md-12 ">
+                                                        <!-- card -->
+                                                        
+                                                                
+                                                                
+                                                                <div class="d-flex  flex-wrap  align-items-center ">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-12 col-md-12 col-12 d-flex flex-column  flex-wrap mt-3  mb-2" >
+                                                                    <h5 class="font-size-16">Note :</h5>
+                                                                    <p class="font-size-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                                                   
+                                                                    
+                                                                </div>
+                                                                
+                                                                   
+                                                                    </div>
+                                                                </div>
+                                                               
+                                                                
+                                                                
+                                                          
+                                                    </div><!-- end col -->
+                                                      
+                                                    </div>
+                                                    <!-- end row -->
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="pt-3">
-                                            <h5 class="font-size-15">Experience :</h5>
-                                            <div class="text-muted">
-                                                <p>If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc</p>
-
-                                                <ul class="list-unstyled mb-0">
-                                                    <li class="py-1"><i class="mdi mdi-circle-medium me-1 text-success align-middle"></i>Donec vitae sapien ut libero venenatis faucibus</li>
-                                                    <li class="py-1"><i class="mdi mdi-circle-medium me-1 text-success align-middle"></i>Quisque rutrum aenean imperdiet</li>
-                                                    <li class="py-1"><i class="mdi mdi-circle-medium me-1 text-success align-middle"></i>Integer ante a consectetuer eget</li>
-                                                    <li class="py-1"><i class="mdi mdi-circle-medium me-1 text-success align-middle"></i>Phasellus nec sem in justo pellentesque</li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <!-- end card body -->
                             </div>
-                            <!-- end card -->
                         </div>
                         <!-- end tab pane -->
 
