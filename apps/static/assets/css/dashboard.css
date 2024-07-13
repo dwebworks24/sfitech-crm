@@ -59,6 +59,15 @@
     --bs-btn-bg: #2A2F4D!important;
     
 }
+
+.grid-container {
+    display: grid!important;
+    grid-template-columns: repeat(5, 1fr)!important; /* 1fr divides the space equally */
+    gap: 0!important; /* No gap between items */
+}
+.grid-item {
+    text-align: center!important;
+}
 .bg-custom-card{
     background: #2A2F4D!important;
 
@@ -66,4 +75,56 @@
 .bg-payment{
     background:#141A30!important;
 }
+.footer-bg-cr{
+    background: #141A30!important;
+    color: #fff!important;
+}
+.fintech-bg {
+    background-image: url("../images/users/bg-card-imk.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 150px!important;
+    border-radius: 10px;
+   
+   
+  }
+  .text-primary{
+    color: #3241FF!important;
+    
+  }
+  .utility-card{
+    max-width: 110px!important;
+  }
+ 
+  @media (min-width: 310px) and (max-width:576px) {
+    .utility-card{
+        max-width: 100%!important;
+      }
+     
+}
+.bg-clr{
+    background:#141A30!important;
+    border-radius: 30px!important;
+}
+.device-bg{
+    border: 1px solid #79747E!important;
+    background: #2A2F4D!important;
 
+}
+.bg-custom-device{
+    background: #394068!important;
+    border-radius: 5px!important;
+    border: 1px solid #79747E!important;
+}
+.merchant-card{
+    width: 300px!important;
+    border-radius: 20px!important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #3241FF!important;
+}
+
+.del-price{
+    margin-left: 1rem!important;
+}

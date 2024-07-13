@@ -3932,6 +3932,7 @@ div.dataTables_wrapper div.dataTables_info {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .auth-bg .bg-overlay {
   opacity: 0.9;
 }
@@ -4975,6 +4976,11 @@ body[data-layout=horizontal] .chat-conversation {
 [data-bs-theme=dark] .pricing-tab-box .nav-link {
   border-color: var(--bs-border-color);
 }
+.bg-card-colr{
+ background: #2A2F4D!important;
 
+}
 
-
+.dash-cg{
+  max-width: 3rem!important;
+}

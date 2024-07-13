@@ -16,7 +16,7 @@ function register_user() {
         success: function (response) {
             window.location = response['path']
         },
-        error: function (error) {
+        error: function (response) {
             show_error(response.responseJSON['error'])
         }
     });
